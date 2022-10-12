@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  padding    : 0;
+  max-width  : 800px;
+  margin     : 0 auto;
+}
+
+label {
+  display: contents;
+}
+
+canvas {
+  width       : 100%;
+  margin      : 0 auto;
+  aspect-ratio: 800 / 600;
+}
+
+#controls {
+  width                : 100%;
+  display              : grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+
+#graph {
+  display: grid;
+}
+
+#graph canvas {
+  grid-area: 1/1;
+}
