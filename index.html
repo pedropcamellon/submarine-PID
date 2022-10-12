@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PID</title>
+  </head>
+  <body>
+    <main id="element"></main>
+    <div id="controls">
+      <label>
+        <span>Target depth:</span>
+        <input type="range" id="target" min="0" max="600" step="0.1" />
+        <span class="output"></span>
+      </label>
+      <label>
+        <span>K<sub>p</sub>:</span>
+        <input
+          type="range"
+          id="kp"
+          min="0"
+          max="0.001"
+          step="0.00001"
+          value="0.0004"
+        />
+        <span class="output"></span>
+      </label>
+      <label>
+        <span>K<sub>d</sub>:</span>
+        <input
+          type="range"
+          id="kd"
+          min="0"
+          max="0.001"
+          step="0.00001"
+          value="0.00015"
+        />
+        <span class="output"></span>
+      </label>
+      <label>
+        <span>K<sub>i</sub>:</span>
+        <input
+          type="range"
+          id="ki"
+          min="0"
+          max="0.0001"
+          step="0.000001"
+          value="0.000005"
+        />
+        <span class="output"></span>
+      </label>
+    </div>
+    <div id="graph">
+      <canvas id="c1" height="600" width="800"></canvas>
+      <canvas id="c2" height="600" width="800"></canvas>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
